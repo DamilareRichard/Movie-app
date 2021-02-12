@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap');
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	background-color: #373b69;
+	margin: 0;
+
+}
+
+main{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px 0 50px;
+	margin: 0 20px;
+	color: #fff;
+}
+
+.nav a {
+	text-decoration: unset;
+	color: #fff;
+}
+
+.nav p {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 35px;
+	
+}
+
+.nav i {
+	font-size: 20px;
+
+}
+
+.right-hand {
+	padding: 1rem;
+}
+
+.right-hand input {
+	padding: .5rem 1rem;
+	border-radius: 50px;
+	border: 1px solid #096688;
+	outline: none;
+	font-family: inherit;
+
+}
+
+.right-hand i {
+	margin: 10px;
+	color: #fff;
+}
+
+.right-hand input::placeholder {
+	color: red;
+}
+
+h1{
+	position: relative;
+	margin: 80px 0 0 80px;
+	color: #fff;
+}
+
+.movie {
+	
+	width: 300px;
+	margin: 3rem 4rem 2rem 5rem;
+	border-radius: 5px;
+	box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2);
+	background: #373b69;
+	overflow: hidden;
+	position: relative;
+
+}
+
+.movie img {
+	width: 100%;
+	
+	
+}
+
+.movie-info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem 1rem;
+	color: #eee;
+	letter-spacing: .5px;
+}
+
+.movie-info h3 {
+	margin: 0;
+}
+
+.movie-info span {
+	background: #22254b;
+	border-radius: 3px;
+	font-weight: bold;
+	padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green {
+	color: rgba(39, 189, 39);
+}
+.movie-info span.orange{
+	color: orange;
+}
+.movie-info span.red {
+	color: red;
+}
+
+.overview {
+	background: #fff;
+	padding: 2rem;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	max-height: 100%;
+	overflow: auto;
+	transform: translateY(100%);
+	transition: transform .3s ease-in-out
+}
+
+.overview h3 {
+	margin-top: 0;
+}
+
+.movie:hover .overview {
+	transform: translateY(0);
+}
+
+
+@media screen and (max-width: 770px) {
+
+
+
+	.nav {
+		padding: 20px 0 0 5px;
+		margin: 5px; 
+	}
+
+	.right-hand input {
+		margin-top: 10px;
+	}
+}
