@@ -151,15 +151,20 @@ h1{
 
 	.nav {
 		padding: 20px 0 0 5px;
-		margin: 0 10px;	
+		margin: 0 12px;	
 	}
 
 	.nav p {
-		font-size: 30px;
+		font-size: 28px;
 	}
 
 	.right-hand {
-		padding: .3rem;
+		padding: .2rem;
+	}
+
+	.right-hand input {
+		width: 70%;
+		padding: 10px;
 	}
 
 	.right-hand i {
