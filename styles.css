@@ -47,11 +47,7 @@ main{
 
 }
 
-.right-hand {
-	padding: 1rem;
-}
-
-.right-hand input {
+input {
 	padding: .5rem 1rem;
 	border-radius: 50px;
 	border: 1px solid #096688;
@@ -60,12 +56,12 @@ main{
 
 }
 
-.right-hand i {
+ i {
 	margin: 10px;
 	color: #fff;
 }
 
-.right-hand input::placeholder {
+ input::placeholder {
 	color: red;
 }
 
@@ -158,16 +154,19 @@ h1{
 		font-size: 28px;
 	}
 
-	.right-hand {
-		padding: .2rem;
-	}
 
-	.right-hand input {
-		width: 70%;
+	 input {
+		width: 50%;
 		padding: 10px;
 	}
 
-	.right-hand i {
+	i {
 		margin: 5px; 
+	}
+
+	.nav .fa-search {
+		
+		color: red;
+		display: none;
 	}
 }
